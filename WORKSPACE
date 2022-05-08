@@ -42,3 +42,11 @@ http_archive(
     strip_prefix = "platforms-98939346da932eef0b54cf808622f5bb0928f00b",
     urls = ["https://github.com/bazelbuild/platforms/archive/98939346da932eef0b54cf808622f5bb0928f00b.zip"],
 )
+
+android_sdk_repository(
+    name = "androidsdk", # Required. Name *must* be "androidsdk".
+)
+
+android_ndk_repository(
+    name = "androidndk", # Required. Name *must* be "androidndk".
+)
